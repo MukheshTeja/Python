@@ -57,8 +57,8 @@ class Converter:
 
         meters = self.meters()
         return meters / 0.001
-
-c = Converter(9, 'inches')
+number=int(input("enter the number to be converted into other units::>)
+c = Converter(number, 'inches')
 print("To meters",c.meters())     
 print("To feet",c.feet())       
 print("To centimeters",c.centimeters())  
