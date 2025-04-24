@@ -8,7 +8,7 @@ df = pd.DataFrame(data)
 
 df['party'] = (df['john'] & df['judy'])
 
-df['days_til_party'] = df['party'].[::-1].cumsum().[::-1]
+df['days_til_party'] = df['party'][::-1].cumsum()[::-1]
 df['days_til_party'] = df['days_til_party'].replace({1: 0}).fillna(method='bfill')
 
 print(df)
